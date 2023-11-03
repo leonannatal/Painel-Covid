@@ -3,7 +3,6 @@ import pandas as pd
 import numpy as np
 import json
 import requests
-import matplotlib.pylab as plt
 st.title("Painel Covid")
 url = "https://imunizacao-es.saude.gov.br/_search"
 
@@ -19,3 +18,4 @@ response = requests.request("POST", url, headers=headers, data=payload)
 data = response.json()
 data = pd.json_normalize(data['hits']['hits'])
 data
+st.bar_chart(data)
