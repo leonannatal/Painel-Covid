@@ -22,5 +22,4 @@ data
 data['_source.paciente_enumSexoBiologico'] = data['_source.paciente_enumSexoBiologico'].astype(str)
 df_pop = data['_source.paciente_enumSexoBiologico'].value_counts()
 df_pop
-b = pd.DataFrame(df_pop)
-st.bar_chart(b)
+
