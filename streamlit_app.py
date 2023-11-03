@@ -3,6 +3,7 @@ import pandas as pd
 import numpy as np
 import json
 import requests
+import matplotlib.pyplot as pyplot
 
 st.title("Painel Covid")
 url = "https://imunizacao-es.saude.gov.br/_search"
