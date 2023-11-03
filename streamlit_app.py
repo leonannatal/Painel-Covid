@@ -21,4 +21,4 @@ data = pd.json_normalize(data['hits']['hits'])
 data
 data['_source.paciente_enumSexoBiologico'] = data['_source.paciente_enumSexoBiologico'].astype(str)
 df_pop = data['_source.paciente_enumSexoBiologico'].value_counts()
-st.bar_chart(df_pop)
+st.bar_chart(data['_source.paciente_enumSexoBiologico'])
