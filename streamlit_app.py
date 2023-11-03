@@ -1,10 +1,9 @@
-pip install matplotlib
 import streamlit as st
 import pandas as pd
 import numpy as np
 import json
 import requests
-import matplotlib.pyplot as plt
+import matplotlib.pylab as plt
 st.title("Painel Covid")
 url = "https://imunizacao-es.saude.gov.br/_search"
 
